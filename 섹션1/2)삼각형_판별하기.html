@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <!-- 삼각형은 두변의 합은 가장 긴 변의 합보다 커야된다.(같아도 안됨) -->
+    <body>
+        <script>
+            function solution(a, b, c){
+                let answer="YES", max;
+                let tot = a+b+c;
+
+                if(a>b)max = a;
+                else max = b;
+
+                if(max < c){
+                    max = c;
+                }
+                if(tot-max <= max) answer="NO"
+                return answer;
+            }
+
+            console.log(solution(13,33, 17));
+        </script>
+    </body>
+</html>
