@@ -16,6 +16,7 @@
                         if(sum - (arr[i]+arr[j]) === 100){
                             arr.splice(j,1);
                             arr.splice(i,1);
+                            //splice는 제거되면 앞으로 당겨지기 때문에 뒤에꺼 부터 먼저 지워줌.
                         }
                     }
                 }
