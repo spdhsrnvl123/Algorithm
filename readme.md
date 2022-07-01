@@ -66,7 +66,7 @@ https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Nu
 
 ```js
 const a = [1,2,3]
-a.forEach(function(v,i,arr)){
+a.forEach(function(v,i,arr){
     console.log(v,i,arr,this)
 },[10,11,12])
 /*
