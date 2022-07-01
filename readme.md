@@ -100,7 +100,6 @@ Window {window: Window, self: Window, document: document, name: '', location: L
 javascript
 Window {window: Window, self: Window, document: document, name: '', location: Location, …}
 */
-
 ```
 
 위의 코드에서 languagesPrint()의 this는 현재 객체인 fun1을 가리키지만, forEach의 인자로 들어간 콜백함수는 그렇지 않기 때문에 window객체가 나오게 된다. 이런 현상을 해결 할 수 있는 방법은 다음과 같다.
@@ -135,3 +134,52 @@ pyh javascript
 - 메서드 호출시 : 메서드 호출 주체(메서드명 앞)
 - callback 호출시 : 기본적으로는 함수내부에서와 동일
 - 생성자함수 호출시 : 인스턴스
+
+## ※ toString()
+
+문자타입으로 변환함.
+
+```js
+let test = 12345;
+test = test.toString();
+
+console.log(test); //'12345'
+```
+
+toString()을 사용하지 않고 따옴표를 추가하는 방법
+
+```js
+let test = 12345;
+test = test + ""; //또는 아래처럼 따옴표를 앞에 위치
+```
+
+## map
+
+for문을 돌려서 새로운 배열을 만드는 목적. return필수.
+
+[MDN - Array.prototype.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
+`Array.prototype.map(callback[, thisArg])`
+
+- `callback`: `function (currentValue[, index[, originalArray]])`
+  - `currentValue`: 현재값
+  - `index`: 현재 인덱스
+  - `originalArray`: 원본 배열
+- `thisArg`: this에 할당할 대상. 생략시 global객체,window객체
+
+```js
+const a = [1, 2, 3];
+const b = a.map(
+  function (v, i, arr) {
+    console.log(v, i, arr, this);
+    return this[0] + v;
+  },
+  [10]
+);
+/*
+1 0 [1, 2, 3] [10]
+2 1 [1, 2, 3] [10]
+3 2 [1, 2, 3] [10]
+*/
+console.log(b); // [11,12,13]
+```
