@@ -51,7 +51,7 @@ https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Nu
 
 # ▶ forEach,map,reduce,filter
 
-## forEach
+## **forEach**
 
 **for문 돌리는거랑 같은 개념.**<br />
 <u>MDN - Array.prototype.forEach</u><br/>
@@ -65,10 +65,13 @@ https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Nu
 <span style="color:yellow">thisArg : this에 할당할 대상. 생략시 global객체</span>
 
 ```js
-const a = [1,2,3]
-a.forEach(function(v,i,arr){
-    console.log(v,i,arr,this)
-},[10,11,12])
+const a = [1, 2, 3];
+a.forEach(
+  function (v, i, arr) {
+    console.log(v, i, arr, this);
+  },
+  [10, 11, 12]
+);
 /*
 1 0 [1, 2, 3] [10, 11, 12]
 2 1 [1, 2, 3] [10, 11, 12]
@@ -135,25 +138,7 @@ pyh javascript
 - callback 호출시 : 기본적으로는 함수내부에서와 동일
 - 생성자함수 호출시 : 인스턴스
 
-## ※ toString()
-
-문자타입으로 변환함.
-
-```js
-let test = 12345;
-test = test.toString();
-
-console.log(test); //'12345'
-```
-
-toString()을 사용하지 않고 따옴표를 추가하는 방법
-
-```js
-let test = 12345;
-test = test + ""; //또는 아래처럼 따옴표를 앞에 위치
-```
-
-## map
+## **map**
 
 for문을 돌려서 새로운 배열을 만드는 목적. return필수.
 
@@ -183,3 +168,186 @@ const b = a.map(
 */
 console.log(b); // [11,12,13]
 ```
+
+## **reduce**
+
+for문을 돌려서 최종적으로 다른 무언가를 만드는 목적. return필수
+
+[MDN - Array.prototype.reduce](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
+`Array.prototype.reduce(callback[, initialValue])`
+
+- `initialValue`: 초기값. 생략시 첫번째 인자가 자동 지정되며,
+  이 경우 currentValue는 두번째 인자부터 배정된다.
+- `callback`: `function (accumulator, currentValue[, currentIndex[, originalArray]])`
+  - `accumulator`: 누적된 계산값
+  - `currentValue`: 현재값
+  - `currentIndex`: 현재 인덱스
+  - `originalArray`: 원본 배열
+
+```js
+const arr = [1, 2, 3];
+const res = arr.reduce(function (p, c, i, arr) {
+  console.log(p, c, i, arr, this);
+  return p + c;
+}, 10);
+
+/*
+10 1 0 [1, 2, 3] window
+11 2 1 [1, 2, 3] window
+13 3 2 [1, 2, 3] window
+console.log(res) //16
+*/
+```
+
+```js
+const arr = ["a", "b", "c", "d"];
+const str = arr.reduce(function (res, item, index, array) {
+  res[item] = item;
+  return res;
+}, {});
+console.log(str); //{a: 'a', b: 'b', c: 'c', d: 'd'}
+```
+
+```js
+const arr = [1, 2, 3, 4];
+const str = arr.reduce(function (res, item, index, array) {
+  return res + item;
+}, ""); //''생략이 10이 출력.
+console.log(str); //1234
+```
+
+```js
+const arr = ["a", "b", "c", "d"];
+const str = arr.reduce(function (res, item, index, array) {
+  return res + item;
+});
+console.log(str); //abcd
+```
+
+```js
+const arr = [10, 20, 30, 40, 50];
+const r = arr.reduce(function (p, c) {
+  return p + c;
+});
+console.log(r); //150
+```
+
+```jsx
+const arr = [10, 20, 30, 40, 50];
+const r = arr.reduce((p, c) => p + c);
+console.log(r); //150
+```
+
+**reduce를 사용하면 좋은점**
+
+```js
+//for문으로 돌릴 경우
+const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let res = 0;
+for (let b = 0; b < a.length; b++) {
+  res += a[b];
+}
+//55
+```
+
+```js
+//reduce문으로 돌릴 경우
+const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const res = a.reduce(function (a, c) {
+  return a + c;
+});
+console.log(res); //55
+```
+
+# ▶ replace
+
+String 타입은 replace()함수를 제공하며 이것을 이용하여 문자열의 특정 문자열을 다른 문자열로 변환할 수 있다.<br />
+replace()는 먼저 검색되는 1개의 문자열만 반환하는데, 여러 문자열을 변환할 때는 정규 표현식을 이용하여 일이치하는 모든 문자열을 변환할 수 있다.
+
+## **1)replace()로 문자열 치환**
+
+```js
+let str = "Hello world, Java";
+str = str.replace("Java", "JavaScript");
+console.log(str); //Hello world, JavaScript
+```
+
+바꾸려는 문자열이 여러개 있어도, 처음 찾은 문자열 1개만 변환.
+
+```js
+let str = "Hello world, Java, Java, Java";
+
+str = str.replace("Java", "JavaScript");
+console.log(str); //Hello world, JavaScript, Java, Java
+```
+
+## **2) 정규식을 이용하여 모든 문자열치환**
+
+문자열 안에 변경하려는 문자열을 여러개 있고 모든 문자열을 바꾸고 싶을때, 정규식을 이용하여 모든 문자열을 변경할 수 있다.<br />
+replace(/[old str]/g,'[new str]')는 문자열에 있는 모든 old string을 new string으로 변환한다. 아래 예제에서 /Java/g가 정규표현식인데, 정규표현식은 /Pattern/flag처럼 패턴과 플래그로 구성된다.<br/>
+그리고 주의할 점은 찾으려는 문자열에 따옴표를 입력하지 않아야 한다.
+
+아래 예제는 문자열에 있는 Java를 모두 JavaScript로 변환하는 예제이다. 플래그 g는 모든 문자열을 변환하라는 의미이다.
+
+```js
+let str = "Hello world, Java, Java, Java";
+
+str = str.replace(/Java/g, "JavaScript");
+console.log(str); //Hello world, JavaScript, JavaScript, JavaScript
+```
+
+## **3) 대소문자 구분하지 않고 문자열 치환**
+
+대소문자를 구분하지 않고 변경하려면 아래처럼 플래그에 i를 추가하시면 된다. 결과를 보면 모든 문자열이 변환된 것을 확인할 수 있다.
+
+```js
+let str = "Hello world, Java, Java, Java";
+
+str = str.replace(/Java/gi, "JavaScript");
+console.log(str); //Hello world, JavaScript, JavaScript, JavaScript
+```
+
+https://codechacha.com/ko/javascript-replace-in-string/
+
+# ▶ toString()
+
+문자타입으로 변환함.
+
+```js
+let test = 12345;
+test = test.toString();
+
+console.log(test); //'12345'
+```
+
+toString()을 사용하지 않고 따옴표를 추가하는 방법
+
+```js
+let test = 12345;
+test = test + ""; //또는 아래처럼 따옴표를 앞에 위치
+```
+
+# ▶ Object.assign()
+
+Javascript의 Object.assign() 함수는 여러 개의 매개변수 객체 중 target 매개변수 객체에 나머지 객체를 병합하는 함수이다. 여러 객체의 프로퍼티를 복사하여 첫 번째 객체의 프로퍼티에 추가한 뒤에 그 객체를 반환하는 함수이다.<br />
+javascript의 Object.assign()함수를 사용하기 위해서는 꼭 target 객체를 정해야 한다.
+
+```js
+//Object.assign() 함수 사용방법
+Object.assign([target 객체],[여러개의 객체])
+```
+
+```js
+var object1 = { a: 111 };
+var object2 = { b: 222 };
+var object3 = { c: 333 };
+var newObject = Object.assign({}, object1, object2, object3);
+
+console.log(newObject); //{a:111,b:222,c:333}
+```
+
+# ▶ 재귀함수
+
+함수가 자신을 다시 호출하는 구조로 만들어진 함수이다. 재귀함수는 종료조건이 있어야 하며, 종료조건을 성정해주지 않으면 무한 반복을 하게된다. 재귀함수로 작성이 되는 코드는 반복문으로도 작성할 수 있다.
+https://velog.io/@jeongin/Javascript-%EC%9E%AC%EA%B7%80%ED%95%A8%EC%88%98
