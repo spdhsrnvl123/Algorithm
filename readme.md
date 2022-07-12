@@ -375,7 +375,7 @@ var mine = [0, 1, 2, 3];
 mine.splice(2, 0, 5); //[0,1,5,2,3]
 
 //배열 2번째 위치한 곳에 숫자 5,7을 추가한다.
-mine.spice(2, 0, 5, 7); //[0,1,5,7,2,3]
+mine.spice(2, 0, 5, 7); //[0,1,5,7,5,2,3]
 ```
 
 ### 2) 배열 요소 제거
@@ -393,13 +393,13 @@ mine.splice(1, 2); //[0,3]
 ### 3) 배열 요소 교체
 
 ```js
-var mine = [0,1,2,3]l
+var mine = [0, 1, 2, 3];
 
 //배열 1번째부터 1개를 제거하고 숫자 5개를 추가한다.
-mine.splice(1,1,5); // [0,5,2,3]
+mine.splice(1, 1, 5); // [0,5,2,3]
 
 //배열 1번째부터 2개를 제거하고 숫자 5로 추가한다.
-mine.splice(1,2,5); //[0,5,3]
+mine.splice(1, 2, 5); //[0,5,3]
 ```
 
 ### 배열 요소 추출하기
@@ -415,3 +415,88 @@ var remove = mine.splice(1, 2); // [1,2]
 ```
 
 https://mine-it-record.tistory.com/352
+
+# ▶ split()
+
+문자열을 일정한 구분자로 잘라서 배열로 저장
+
+> string.split(separator,limit)
+
+- split()함수는, 문자열을 'separator'로 잘라서 'limit' 크기 이하의 배열에 잘라진 문자열을 저장하여 리턴.
+- separator
+  - 필수 아님
+  - 문자열을 잘라 줄 구분자(문자열 또는 정규식)
+  - 값이 입력되지 않으면 문자열 전체를 배열에 담아서 리턴.
+- limit
+  - 필수 아님
+  - 최대 분할 갯수
+
+### 파라미터를 입력하지 않을 경우
+
+```js
+const str = "apple banana orange";
+const arr = str.split();
+
+console.log(arr); //['apple banana orange']
+
+console.log(arr.length); //1
+
+//파리미터로 아무것도 전달하지 않으면 문자열 전체를 length 1인 배열에 담아서 리턴.
+```
+
+### 단어별로(separator=" ")잘라서 배열에 담기
+
+```js
+const str = "apple banana orange";
+const arr = str.split(" ");
+
+console.log(arr); //['apple', 'banana', 'orange']
+
+console.log(arr.length); //3
+
+// separator로 " "(스페이스)를 지정하면, 문자열을 구분자로 잘라서 각각의 잘라진 조각들을 배열에 저장하여 리턴.
+```
+
+### 글자별로(separator="") 잘라서 배열에 담기
+
+```js
+const str = "a b c";
+
+const arr = str.split("");
+
+console.log(arr); //['a', ' ', 'b', ' ', 'c']
+
+console.log(arr.length); //5
+//separator로 ""(length가 0인 문자열)을 전달하면, 문자열을 각각의 문자별로 잘라서, 한 글자씩(공백 포함) 배열에 저장하여 리턴.
+```
+
+### 특정 구분자로 잘라서 배열에 담기
+
+```js
+const str = "apple,banana,orange";
+
+const arr = str.split(",");
+
+console.log(arr); // ['apple', 'banana', 'orange']
+
+console.log(arr.length); //3
+
+//separator(여기서는 ',')를 지정하여,문자열을 separator로 잘라서 만들어진 조각들을 배열에 담아서 리턴.
+```
+
+### limit 값 지정하기
+
+```js
+const str = "apple,banana,orange";
+
+const arr = str.split(",", 2);
+
+console.log(arr); //['apple', 'banana']
+
+console.log(arr.length); //2
+
+//두번째 파라미터인 limit값을 지정
+//위의 예제에서 문자열을 ','로 자르면 총 3개의 배열이 만들어지지만
+```
+
+https://hianna.tistory.com/377
