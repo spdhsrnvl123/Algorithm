@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){         
+                let answer=0;
+                for(let i of s){
+                    // 대문자는 아스키넘버를 조금 왜워야 된다 65~90(25+1개)
+                    /*
+                    let num = x.charCodeAt(); 아스키코드넘버 반환.
+                    console.log(num); 
+                    */
+                    /*
+                    console.log(x.toUpperCase(),x)
+                    toUpperCase를 사용한다 해서 x값이 대문자로 변하지는 않음.
+                    */
+                    if(i === i.toUpperCase()){
+                        answer++;
+                    }
+                }
+
+                return answer;
+            }
+
+            let str="KoreaTimeGood";
+            console.log(solution(str));
+        </script>
+    </body>
+</html>
