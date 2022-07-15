@@ -500,3 +500,25 @@ console.log(arr.length); //2
 ```
 
 https://hianna.tistory.com/377
+
+# ▶ charCodeAt() , fromCharCode()
+
+## 아스키코드
+
+대문자 아스키넘버 : 65(A) ~ 90(Z) , 소문자 아스키넘버 : 97(a) ~ 122(z)
+
+### charCodeAt()
+
+- 문자를 아스키코드 넘버로 변환.
+
+### fromCharCode()
+
+- 아스키코드를 문자로 변환.
+
+※ 참고
+
+```js
+let str = "KoreaTimeGood";
+str.toUpperCase();
+// str 기본 값이 대문자로 변환되지는 않는다.
+```
