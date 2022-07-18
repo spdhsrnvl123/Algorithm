@@ -591,3 +591,37 @@ find4: undefined
 ```
 
 https://bbaktaeho-95.tistory.com/40
+
+# slice()
+
+> arr.slice([begin[, end]]) <br />
+
+!["slice"](/images/slice.png)
+slice 함수는 잘라낼 배열의 시작 index와 end index를 파라미터로 받아서, 그 사이의 원소들을 새로운 배열로 만들어서 리턴한다.<br />
+<span style="color:red">원본배열은 변경되지 않는다.</span>
+
+### `파라미터`
+
+_begin_
+잘라낼 배열의 시작 index
+
+_end_
+잘라낼 배열의 종료 index<br />
+end index의 값은 잘라낼 배열에 포함되지 않습니다.<br />
+end index가 생략되면, begin index부터 배열의 끝까지를 잘라낸다.
+
+### `리턴값`
+
+잘라낸 원소들로 만든 새로운 배열을 리턴한다.
+
+```js
+const arr = ["a", "b", "c", "d"];
+
+const arr1 = arr.slice(1, 3);
+const arr2 = arr.slice(1);
+const arr3 = arr.slice(-3, -1);
+
+console.log(arr1); // [ 'b', 'c' ]
+console.log(arr2); // ['b', 'c', 'd']
+console.log(arr3); // ['b', 'c']
+```
