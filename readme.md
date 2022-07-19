@@ -186,6 +186,8 @@ const b = a.map(
 console.log(b); // [11,12,13]
 ```
 
+## 📘복습완료 20220719 <hr />
+
 ## **reduce**
 
 for문을 돌려서 최종적으로 다른 무언가를 만드는 목적. return필수
@@ -625,3 +627,23 @@ console.log(arr1); // [ 'b', 'c' ]
 console.log(arr2); // ['b', 'c', 'd']
 console.log(arr3); // ['b', 'c']
 ```
+
+# substring()
+
+substring() 메소드는 string 객체의 시작 인덱스로 부터 인덱스 전 까지 문자열의 부분 문자열을 반환한다.
+
+> str.substring(indexStart[, indexEnd])
+
+- indexStart<br />
+  반환문자열의 시작 인덱스
+- indexEnd<br />
+  옵션. 반환문자열의 마지막 인덱스(포함되지 않음.)
+
+```js
+const str = "Mozilla";
+
+console.log(str.substring(1, 3)); //"oz"
+console.log(str.substring(2)); //"zilla"
+```
+
+#
