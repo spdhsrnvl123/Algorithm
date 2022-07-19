@@ -542,7 +542,7 @@ str.toUpperCase();
 // str 기본 값이 대문자로 변환되지는 않는다.
 ```
 
-# find()
+# ▶ find()
 
 > 판별 함수를 만족하는 첫 요소를 반환
 
@@ -594,7 +594,7 @@ find4: undefined
 
 https://bbaktaeho-95.tistory.com/40
 
-# slice()
+# ▶ slice()
 
 > arr.slice([begin[, end]]) <br />
 
