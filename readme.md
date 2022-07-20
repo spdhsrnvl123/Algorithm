@@ -159,7 +159,7 @@ pyh javascript
 
 for문을 돌려서 새로운 배열을 만드는 목적. return필수.
 
-[MDN - Array.prototype.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+[[MDN - Array.prototype.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
 `Array.prototype.map(callback[, thisArg])`
 
@@ -186,23 +186,18 @@ const b = a.map(
 console.log(b); // [11,12,13]
 ```
 
-## 📘복습완료 20220719 <hr />
-
 ## **reduce**
 
 for문을 돌려서 최종적으로 다른 무언가를 만드는 목적. return필수
 
-[MDN - Array.prototype.reduce](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-
 `Array.prototype.reduce(callback[, initialValue])`
 
-- `initialValue`: 초기값. 생략시 첫번째 인자가 자동 지정되며,
-  이 경우 currentValue는 두번째 인자부터 배정된다.
+- `initialValue`: 초기값. 생략시 첫번째 인자가 자동 지정되며, 빈 배열에서 초기값 없이 reduce()를 호출하면 오류가 발생한다.
 - `callback`: `function (accumulator, currentValue[, currentIndex[, originalArray]])`
-  - `accumulator`: 누적된 계산값
-  - `currentValue`: 현재값
-  - `currentIndex`: 현재 인덱스
-  - `originalArray`: 원본 배열
+  - `accumulator`: 누산기는 콜백의 반환값을 누적한다. 콜백의 이전 반환값 또는, 콜백의 첫번째 호출이면서 **initialValue**를 제공한 경우에는 **initialValue**의 값이다.
+  - `currentValue`: 현재값.
+  - `currentIndex`: 현재 인덱스, **initialValue**를 제공한 경우 0, 아니면 1부터 시작.
+  - `originalArray`: **reduce()** 를 호출한 배열.
 
 ```js
 const arr = [1, 2, 3];
@@ -645,3 +640,59 @@ const str = "Mozilla";
 console.log(str.substring(1, 3)); //"oz"
 console.log(str.substring(2)); //"zilla"
 ```
+
+# indexOf()
+
+문자열(string)에서 특정 문자열(searchvalue)을 찾고, 검색된 문자열이 '첫번째'로 나타나는 위치 index를 리턴한다.
+
+> string.indexOf(searchvalue,position)
+
+- searchvalue : 찾을 문자열,필수 입력값
+- position : 기본값은 0, string에서 seachvalue를 찾기 시작할 위치,optional
+- 찾는 문자열이 없으면 -1 리턴
+- 대소문자를 구분
+
+```js
+const str = "abab";
+
+console.log(str.indexOf("ab")); //0
+console.log(str.indexOf("ba")); //1
+console.log(str.indexOf("abc")); //-1
+console.log(str.indexOf("AB")); //-1
+```
+
+1. 문자열 'abab'에서 'ab'가 처음으로 나타나는 위치의 인덱스 값을 리턴.
+2. 문자열 'abab'에는 'ba'가 처음으로 나타나는 위치의 인덱스 값을 리턴.
+3. 문자열 'abab'에는 'abc'라는 문자열이 없으므로 숫자 -1을 리턴.
+4. 문자열 'abab'에는 대문자 'AB'는 없으므로 숫자 -1을 리턴(대소문자 구분)
+
+```js
+const str = "abab";
+
+console.log(str.indexOf("ab")); //9
+console.log(str.indexOf("ab", 1)); //2
+```
+
+1. indexOf함수의 두번째 파라미터인 position값이 입력되지 않으면, position의 값은 0으로 처리된다.
+   <br />위 예제에서는 'abab'문자열의 0번째 index부터 'ab'문자열을 찾고, 0번째 index에서 문자열 'ab'를 발견하였으므로, 0을 리턴한다.
+2. position값을 '1'로 입력하였다.<br />
+   위 예제에서는 'abab'문자열의 1번째 index부터 'ab'문자열을 검색하므로 index 0에 있는 'ab'는 무시한다.
+
+### ※ indexOf()로는 찾고자 하는 문자열이 나타난 '첫번째' 위치만 찾을 수 있다. 하지만 약간의 프로그래밍을 통해 문자열에 있는 모든 searchvalue의 위치를 찾을 수 있다.
+
+```js
+let str = "abcabcabc";
+let searchvalue = "ab";
+let pos = 0;
+
+while (true) {
+  let foundPos = str.indexOf(searchvalue, pos);
+  if (foundPos === -1) break;
+
+  console.log(foundPos);
+  pos = foundPos + 1;
+}
+//0 3 6 출력
+```
+
+반복문 안에서 searchvalue를 찾고 나서 positionr값을 foundPos의 다음 index값으로 변경해 준다. 마지막으로 더 이상 문자열을 찾지 못하면 반복문을 종료한다.
