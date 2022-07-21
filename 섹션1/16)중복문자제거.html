@@ -7,7 +7,11 @@
         <script>
             function solution(s){  
                 let answer="";
-                // rechallenge
+                let extract 
+                for(let i=0; i<s.length;i++){
+                    // console.log(s[i],i,s.indexOf(s[i]))
+                    if(i === s.indexOf(s[i]))answer += s[i]
+                }
 
                 return answer;
             }

@@ -370,7 +370,7 @@ https://velog.io/@jeongin/Javascript-%EC%9E%AC%EA%B7%80%ED%95%A8%EC%88%98
 
 `Array.prototype.splice()`메서드는 배열의 기존 요소를 삭제 또는 교체하거나 새 요소를 추가하여 배열의 내용 변경한다.<br />
 
-한마디로 splice() 메서드를 가지고 <span style="color:skyblue">push/pop/unshift/shift</span>역할을 다 할수 있다고 생각하면 된다.
+한마디로 splice() 메서드를 가지고 <span style="color:skyblue">push/pop/unshift/shift</span>역할을 다 할 수 있다고 생각하면 된다.
 
 ## 구문
 
