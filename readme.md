@@ -273,6 +273,8 @@ const res = a.reduce(function (a, c) {
 });
 console.log(res); //55
 ```
+## **filter**
+
 
 # ▶ replace
 
