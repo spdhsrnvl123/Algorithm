@@ -7,7 +7,9 @@
         <script>
             function solution(s){  
                 let answer;
-                
+                answer = s.filter((element,index)=>{
+                    return s.indexOf(element) === index;
+                })
                 return answer;
             }
             let str=["good", "time", "good", "time", "student"];
