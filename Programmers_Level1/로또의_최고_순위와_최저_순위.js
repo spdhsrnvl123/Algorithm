@@ -1,5 +1,4 @@
 // 최대값 최소값을 가정하고 풀이
-
 function solution(lottos, win_nums) {
     var answer = [];
     
