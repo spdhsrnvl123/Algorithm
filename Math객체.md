@@ -64,3 +64,19 @@ Math.pow(3,3)  //결과 : 27
 Math.pow(-3,3) //결과 : -27
 ```
 참고 : https://tagilog.tistory.com/1098
+
+## 📌 Math.min
+Math.min() 함수는 주어진 숫자들 중 가장 작은 값을 반환한다.
+
+### 문법
+```
+Math.min(value[, value2],...])
+```
+
+```js
+Math.min(10,20) //결과 : 10
+Math.min(200,10) // 결과 : 10
+```
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/min
+
+💥Math.abs & Math.max 정리하기
