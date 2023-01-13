@@ -1,41 +1,5 @@
 # 🎉알고리즘 연습
 
-# ▶ Number.MAX_SAFE_INTEGER
-
-이 상수는 JavaScript에서 안전한 최대 정수값을 나타낸다.
-
-```js
-const x = Number.MAX_SAFE_INTEGER + 1;
-const y = Number.MAX_SAFE_INTEGER + 2;
-
-console.log(Number.MAX_SAFE_INTEGER);
-//expected output : 9007199254740991
-
-console.log(x);
-// expected output: 9007199254740992
-console.log(x === y);
-// expected output : true
-```
-
-https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER
-
-# ▶ Number.MIN_SAFE_INTEGER
-
-`Number.MIN_SAFE_INTEGER`상수는 JavaScript에서 안전한 최소 정수값을 나타낸다.
-
-```js
-const x = Number.MIN_SAFE_INTEGER - 1;
-const y = Number.MIN_SAFE_INTEGER - 2;
-
-console.log(Number.MIN_SAFE_INTEGER); // -9007199254740991
-
-console.log(x); // -9007199254740992
-
-console.log(x === y); //true
-```
-
-https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_SAFE_INTEGER
-
 
 # ▶ replace
 
