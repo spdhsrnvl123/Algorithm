@@ -1,56 +1,5 @@
 # 🎉알고리즘 연습
 
-
-# ▶ replace
-
-String 타입은 replace()함수를 제공하며 이것을 이용하여 문자열의 특정 문자열을 다른 문자열로 변환할 수 있다.<br />
-replace()는 먼저 검색되는 1개의 문자열만 반환하는데, 여러 문자열을 변환할 때는 정규 표현식을 이용하여 일치하는 모든 문자열을 변환할 수 있다.
-
-## **1)replace()로 문자열 치환**
-
-```js
-let str = "Hello world, Java";
-str = str.replace("Java", "JavaScript");
-console.log(str); //Hello world, JavaScript
-```
-
-바꾸려는 문자열이 여러개 있어도, 처음 찾은 문자열 1개만 변환.
-
-```js
-let str = "Hello world, Java, Java, Java";
-
-str = str.replace("Java", "JavaScript");
-console.log(str); //Hello world, JavaScript, Java, Java
-```
-
-## **2) 정규식을 이용하여 모든 문자열치환**
-
-문자열 안에 변경하려는 문자열을 여러개 있고 모든 문자열을 바꾸고 싶을때, 정규식을 이용하여 모든 문자열을 변경할 수 있다.<br />
-replace(/[old str]/g,'[new str]')는 문자열에 있는 모든 old string을 new string으로 변환한다. 아래 예제에서 /Java/g가 정규표현식인데, 정규표현식은 /Pattern/flag처럼 패턴과 플래그로 구성된다.<br/>
-그리고 주의할 점은 찾으려는 문자열에 따옴표를 입력하지 않아야 한다.
-
-아래 예제는 문자열에 있는 Java를 모두 JavaScript로 변환하는 예제이다. 플래그 g는 모든 문자열을 변환하라는 의미이다.
-
-```js
-let str = "Hello world, Java, Java, Java";
-
-str = str.replace(/Java/g, "JavaScript");
-console.log(str); //Hello world, JavaScript, JavaScript, JavaScript
-```
-
-## **3) 대소문자 구분하지 않고 문자열 치환**
-
-대소문자를 구분하지 않고 변경하려면 아래처럼 플래그에 i를 추가하시면 된다. 결과를 보면 모든 문자열이 변환된 것을 확인할 수 있다.
-
-```js
-let str = "Hello world, Java, Java, Java";
-
-str = str.replace(/Java/gi, "JavaScript");
-console.log(str); //Hello world, JavaScript, JavaScript, JavaScript
-```
-
-https://codechacha.com/ko/javascript-replace-in-string/
-
 # ▶ toString()
 
 문자타입으로 변환함.
