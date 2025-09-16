@@ -4,8 +4,6 @@
 
 **기간 : 2025.09.16 ~ 2025.11.16**
 
-<details>
-<summary><h3>1주차 (문제 1-10)</h3></summary>
 <table>
 <thead>
 <tr>
@@ -16,6 +14,9 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>1주차 (문제 1-10)</strong></td>
+</tr>
 <tr>
 <td><strong>문제 01</strong></td>
 <td>배열 정렬하기</td>
@@ -76,21 +77,9 @@
 <td>⭐</td>
 <td>____월 ____일</td>
 </tr>
-</tbody>
-</table>
-</details>
-<details>
-<summary><h3>2주차 (문제 11-20)</h3></summary>
-<table>
-<thead>
 <tr>
-<th>문제 번호</th>
-<th>문제명</th>
-<th>난이도</th>
-<th>완료 날짜</th>
+<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>2주차 (문제 11-20)</strong></td>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td><strong>문제 11</strong></td>
 <td>짝지어 제거하기</td>
@@ -151,21 +140,9 @@
 <td>⭐</td>
 <td>____월 ____일</td>
 </tr>
-</tbody>
-</table>
-</details>
-<details>
-<summary><h3>3주차 (문제 21-30)</h3></summary>
-<table>
-<thead>
 <tr>
-<th>문제 번호</th>
-<th>문제명</th>
-<th>난이도</th>
-<th>완료 날짜</th>
+<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>3주차 (문제 21-30)</strong></td>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td><strong>문제 21</strong></td>
 <td>할인 행사</td>
@@ -226,21 +203,9 @@
 <td>⭐⭐</td>
 <td>____월 ____일</td>
 </tr>
-</tbody>
-</table>
-</details>
-<details>
-<summary><h3>4주차 (문제 31-40)</h3></summary>
-<table>
-<thead>
 <tr>
-<th>문제 번호</th>
-<th>문제명</th>
-<th>난이도</th>
-<th>완료 날짜</th>
+<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>4주차 (문제 31-40)</strong></td>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td><strong>문제 31</strong></td>
 <td>양과 늑대</td>
@@ -301,21 +266,9 @@
 <td>⭐⭐⭐</td>
 <td>____월 ____일</td>
 </tr>
-</tbody>
-</table>
-</details>
-<details>
-<summary><h3>5주차 (문제 41-50)</h3></summary>
-<table>
-<thead>
 <tr>
-<th>문제 번호</th>
-<th>문제명</th>
-<th>난이도</th>
-<th>완료 날짜</th>
+<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>5주차 (문제 41-50)</strong></td>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td><strong>문제 41</strong></td>
 <td>벨만-포드 알고리즘</td>
@@ -376,21 +329,9 @@
 <td>⭐</td>
 <td>____월 ____일</td>
 </tr>
-</tbody>
-</table>
-</details>
-<details>
-<summary><h3>6주차 (문제 51-60)</h3></summary>
-<table>
-<thead>
 <tr>
-<th>문제 번호</th>
-<th>문제명</th>
-<th>난이도</th>
-<th>완료 날짜</th>
+<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>6주차 (문제 51-60)</strong></td>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td><strong>문제 51</strong></td>
 <td>양궁 대회</td>
@@ -451,21 +392,9 @@
 <td>⭐⭐</td>
 <td>____월 ____일</td>
 </tr>
-</tbody>
-</table>
-</details>
-<details>
-<summary><h3>7주차 (문제 61-70)</h3></summary>
-<table>
-<thead>
 <tr>
-<th>문제 번호</th>
-<th>문제명</th>
-<th>난이도</th>
-<th>완료 날짜</th>
+<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>7주차 (문제 61-70)</strong></td>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td><strong>문제 61</strong></td>
 <td>지형 이동</td>
@@ -526,21 +455,9 @@
 <td>⭐⭐⭐</td>
 <td>____월 ____일</td>
 </tr>
-</tbody>
-</table>
-</details>
-<details>
-<summary><h3>8주차 (문제 71-85)</h3></summary>
-<table>
-<thead>
 <tr>
-<th>문제 번호</th>
-<th>문제명</th>
-<th>난이도</th>
-<th>완료 날짜</th>
+<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>8주차 (문제 71-85)</strong></td>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td><strong>문제 71</strong></td>
 <td>LIS 길이 계산하기</td>
@@ -631,95 +548,98 @@
 <td>⭐⭐</td>
 <td>____월 ____일</td>
 </tr>
-</tbody>
-</table>
-</details>
-<details>
-<summary><h3>9주차 (문제 86-100)</h3></summary>
-<table>
-<thead>
 <tr>
-<th>문제 번호</th>
-<th>문제명</th>
-<th>완료 날짜</th>
+<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>9주차 (문제 86-100)</strong></td>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td><strong>문제 86</strong></td>
 <td>미로 탈출 명령어</td>
+<td>-</td>
 <td>____월 ____일</td>
 </tr>
 <tr>
 <td><strong>문제 87</strong></td>
 <td>택배 배달과 수거하기</td>
+<td>-</td>
 <td>____월 ____일</td>
 </tr>
 <tr>
 <td><strong>문제 88</strong></td>
 <td>개인정보 수집 유효기간</td>
+<td>-</td>
 <td>____월 ____일</td>
 </tr>
 <tr>
 <td><strong>문제 89</strong></td>
 <td>110 움기기</td>
+<td>-</td>
 <td>____월 ____일</td>
 </tr>
 <tr>
 <td><strong>문제 90</strong></td>
 <td>퀸드 각축 후 개수 세기</td>
+<td>-</td>
 <td>____월 ____일</td>
 </tr>
 <tr>
 <td><strong>문제 91</strong></td>
 <td>없는 숫자 더하기</td>
+<td>-</td>
 <td>____월 ____일</td>
 </tr>
 <tr>
 <td><strong>문제 92</strong></td>
 <td>불량 사용자</td>
+<td>-</td>
 <td>____월 ____일</td>
 </tr>
 <tr>
 <td><strong>문제 93</strong></td>
 <td>k진수에서 소수 개수 구하기</td>
+<td>-</td>
 <td>____월 ____일</td>
 </tr>
 <tr>
 <td><strong>문제 94</strong></td>
 <td>거리두기 확인하기</td>
+<td>-</td>
 <td>____월 ____일</td>
 </tr>
 <tr>
 <td><strong>문제 95</strong></td>
 <td>코딩 테스트 공부</td>
+<td>-</td>
 <td>____월 ____일</td>
 </tr>
 <tr>
 <td><strong>문제 96</strong></td>
 <td>두 큐 합 같게 만들기</td>
+<td>-</td>
 <td>____월 ____일</td>
 </tr>
 <tr>
 <td><strong>문제 97</strong></td>
 <td>숫자 게임</td>
+<td>-</td>
 <td>____월 ____일</td>
 </tr>
 <tr>
 <td><strong>문제 98</strong></td>
 <td>보석 쇼핑</td>
+<td>-</td>
 <td>____월 ____일</td>
 </tr>
 <tr>
 <td><strong>문제 99</strong></td>
 <td>파괴되지 않은 건물</td>
+<td>-</td>
 <td>____월 ____일</td>
 </tr>
 <tr>
 <td><strong>문제 100</strong></td>
 <td>로또의 최고 순위와 최저 순위</td>
+<td>-</td>
 <td>____월 ____일</td>
 </tr>
 </tbody>
 </table>
-</details>
