@@ -1,4 +1,12 @@
-## 📅 문제 목록
+# 📅 문제 목록
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="https://img.icons8.com/color/48/000000/code.png" alt="Code" style="margin: 0 10px;">
+  <img src="https://img.icons8.com/color/48/000000/computer.png" alt="Computer" style="margin: 0 10px;">
+  <img src="https://img.icons8.com/color/48/000000/source-code.png" alt="Source Code" style="margin: 0 10px;">
+  <img src="https://img.icons8.com/color/48/000000/programming.png" alt="Programming" style="margin: 0 10px;">
+  <img src="https://img.icons8.com/color/48/000000/console.png" alt="Console" style="margin: 0 10px;">
+</div>
 
 ### 문제를 푼 다음에는 날짜를 적어 체크!
 
