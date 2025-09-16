@@ -12,6 +12,8 @@
 
 **기간 : 2025.09.16 ~ 2025.11.16**
 
+답지 : https://github.com/kciter/coding-interview-js
+
 <table>
 <thead>
 <tr>
@@ -29,13 +31,13 @@
 <td><strong>문제 01</strong></td>
 <td>배열 정렬하기</td>
 <td>⭐</td>
-<td>____월 ____일</td>
+<td>09월 16일</td>
 </tr>
 <tr>
 <td><strong>문제 02</strong></td>
 <td>배열 제어하기</td>
 <td>⭐⭐</td>
-<td>____월 ____일</td>
+<td>09월 16일</td>
 </tr>
 <tr>
 <td><strong>문제 03</strong></td>
