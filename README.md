@@ -43,7 +43,7 @@
 <td><strong>문제 03</strong></td>
 <td>두 개 뽑아서 더하기</td>
 <td>⭐</td>
-<td>____월 ____일</td>
+<td>09월 17일</td>
 </tr>
 <tr>
 <td><strong>문제 04</strong></td>
