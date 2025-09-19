@@ -49,7 +49,7 @@
 <td><strong>문제 04</strong></td>
 <td>모의고사</td>
 <td>⭐</td>
-<td>____월 ____일</td>
+<td>09월 19일</td>
 </tr>
 <tr>
 <td><strong>문제 05</strong></td>
