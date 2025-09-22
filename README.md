@@ -25,7 +25,7 @@
 </thead>
 <tbody>
 <tr>
-<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>1주차 (문제 1-10)</strong></td>
+<!-- <td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>1주차 (문제 1-10)</strong></td> -->
 </tr>
 <tr>
 <td><strong>문제 01</strong></td>
@@ -73,7 +73,7 @@
 <td><strong>문제 08</strong></td>
 <td>괄호 짝 맞추기</td>
 <td>⭐⭐</td>
-<td>____월 ____일</td>
+<td>09월 22일</td>
 </tr>
 <tr>
 <td><strong>문제 09</strong></td>
@@ -88,7 +88,7 @@
 <td>____월 ____일</td>
 </tr>
 <tr>
-<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>2주차 (문제 11-20)</strong></td>
+<!-- <td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>2주차 (문제 11-20)</strong></td> -->
 </tr>
 <tr>
 <td><strong>문제 11</strong></td>
@@ -151,7 +151,7 @@
 <td>____월 ____일</td>
 </tr>
 <tr>
-<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>3주차 (문제 21-30)</strong></td>
+<!-- <td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>3주차 (문제 21-30)</strong></td> -->
 </tr>
 <tr>
 <td><strong>문제 21</strong></td>
@@ -214,7 +214,7 @@
 <td>____월 ____일</td>
 </tr>
 <tr>
-<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>4주차 (문제 31-40)</strong></td>
+<!-- <td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>4주차 (문제 31-40)</strong></td> -->
 </tr>
 <tr>
 <td><strong>문제 31</strong></td>
@@ -277,7 +277,7 @@
 <td>____월 ____일</td>
 </tr>
 <tr>
-<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>5주차 (문제 41-50)</strong></td>
+<!-- <td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>5주차 (문제 41-50)</strong></td> -->
 </tr>
 <tr>
 <td><strong>문제 41</strong></td>
@@ -340,7 +340,7 @@
 <td>____월 ____일</td>
 </tr>
 <tr>
-<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>6주차 (문제 51-60)</strong></td>
+<!-- <td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>6주차 (문제 51-60)</strong></td> -->
 </tr>
 <tr>
 <td><strong>문제 51</strong></td>
@@ -403,7 +403,7 @@
 <td>____월 ____일</td>
 </tr>
 <tr>
-<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>7주차 (문제 61-70)</strong></td>
+<!-- <td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>7주차 (문제 61-70)</strong></td> -->
 </tr>
 <tr>
 <td><strong>문제 61</strong></td>
@@ -466,7 +466,7 @@
 <td>____월 ____일</td>
 </tr>
 <tr>
-<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>8주차 (문제 71-85)</strong></td>
+<!-- <td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>8주차 (문제 71-85)</strong></td> -->
 </tr>
 <tr>
 <td><strong>문제 71</strong></td>
@@ -559,7 +559,7 @@
 <td>____월 ____일</td>
 </tr>
 <tr>
-<td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>9주차 (문제 86-100)</strong></td>
+<!-- <td colspan="4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; font-weight: bold; text-align: center;"><strong>9주차 (문제 86-100)</strong></td> -->
 </tr>
 <tr>
 <td><strong>문제 86</strong></td>
